@@ -11,9 +11,7 @@ function repeatStr(count,string) {
     return repeatedstring
   }
 
-
 ////////////////////////////////////////////////////////
-
 
 function repeatStr(count,string) {
     return string.repeat(count)
