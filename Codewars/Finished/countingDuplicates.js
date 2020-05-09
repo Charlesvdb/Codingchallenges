@@ -13,3 +13,10 @@
 function duplicateCount(text){
     return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
 }
+
+
+// Regex -> https://regexr.com/3i7es
+/*
+  ([^]) Capture any character, as . doesn't literally match every character.
+  \\1+ Followed by itself one or more times (the \1 corresponding to the first capture group)
+ */
