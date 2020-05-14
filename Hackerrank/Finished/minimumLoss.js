@@ -22,8 +22,6 @@
 // Print a single integer denoting the minimum amount of money Lauren must lose if she buys and resells the house within the next  years.
 
 
-
-
 function minimumLoss(prices) {
     const indexes = {};
     let minLoss = Infinity;
