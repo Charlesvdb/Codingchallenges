@@ -26,4 +26,28 @@ function vowelIndices(word) {
       }
     }
     return finalarr
-}
+  }
+  
+  
+  
+  // or other:
+  
+  
+  
+  function vowelIndices(word) {
+    var foundIndexes = [];
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+  
+    /* Loop each character in the word */
+    for (let i = 0; i < word.length; i++) {
+    
+      /** Check if the character is found in array of vowels */
+      if (vowels.indexOf(word[i].toLowerCase()) > -1) {
+      
+        /* Found a match, store the index (+1) */
+        foundIndexes.push(i + 1);
+      }
+    }
+  
+    return foundIndexes;
+  }
