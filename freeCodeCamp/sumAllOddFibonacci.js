@@ -13,10 +13,8 @@ function sumFibs(num) {
       if (currNumber % 2 !== 0) {
         result += currNumber;
       }
-  
       currNumber += prevNumber;
       prevNumber = currNumber - prevNumber;
     }
-  
     return result;
   }
