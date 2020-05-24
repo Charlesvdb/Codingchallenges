@@ -32,6 +32,11 @@
 
 function maxNumber(n){
     return newarr = Number(n.toString().split("").sort().reverse().join(""))
+}
+
+// or different
+
+function maxNumber(n){
+    return Number(String(n).split("").sort().reverse().join(""));
   }
   
-  maxNumber(566797)
