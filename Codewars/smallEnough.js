@@ -13,4 +13,8 @@ function smallEnough(a, limit){
   }
 
   
-  
+// or shorter:
+
+function smallEnough(a, limit){
+    return Math.max(...a) <= limit
+}
