@@ -5,4 +5,8 @@
 
 const orderedCount = text => [...new Set(text)].map(letter => [letter, text.split(letter).length - 1])
 
-orderedCount("babbabbabbab")
+
+// or shorter:
+
+const orderedCount = s =>
+  Array.from(s.split('').reduce((m, k) => m.set(k, m.has(k) ? m.get(k) + 1 : 1), new Map()));
